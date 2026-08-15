@@ -5,6 +5,13 @@ just plain `<img src="...jpg">` tags — downloads them, and lets you save
 them individually or as one ZIP, straight to whatever device you're using
 (laptop, phone, tablet).
 
+## 🔗 Live App
+
+**[https://image-scraper-pawan.streamlit.app/](https://image-scraper-pawan.streamlit.app/)**
+
+No install needed — open this link on your phone, tablet, or laptop
+(any device, any network) and start scraping right away.
+
 ## Files
 - `app.py` — the full Streamlit app
 - `requirements.txt` — dependencies
@@ -30,13 +37,21 @@ then downloaded and renamed sequentially as `1.<ext>`, `2.<ext>`, `3.<ext>`, …
 with each file keeping **its own correct extension** — a mixed page can
 produce `1.jpg`, `2.png`, `3.webp`, `4.svg` all in one run.
 
-## 1. Install
+## Option A: Just use the live app
+
+Go to **[https://image-scraper-pawan.streamlit.app/](https://image-scraper-pawan.streamlit.app/)**
+from any device's browser — nothing to install. Skip straight to
+[How it works](#how-it-works) below.
+
+## Option B: Run it yourself
+
+### 1. Install
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 2. Run locally
+### 2. Run locally
 
 ```bash
 streamlit run app.py
@@ -44,7 +59,7 @@ streamlit run app.py
 
 This opens `http://localhost:8501` in your browser.
 
-## 3. Use it from your phone (same Wi-Fi)
+### 3. Use it from your phone (same Wi-Fi)
 
 Run it bound to your network IP instead of just localhost:
 
@@ -59,10 +74,11 @@ browser (same Wi-Fi network) go to:
 http://192.168.1.23:8501
 ```
 
-## 4. Use it from anywhere on your phone (deploy)
+### 4. Deploy your own copy
 
 For access from any device/network, deploy it (all have free tiers):
 - **Streamlit Community Cloud** — connect this repo, one click deploy.
+  (This is what powers the live app linked above.)
 - **Render / Railway / Hugging Face Spaces** — also support Streamlit apps directly.
 
 Once deployed you'll get a public URL you can open from any phone or computer.
@@ -111,3 +127,8 @@ shows a text caption instead of a broken preview.
   `srcset`/`<picture>` markup — is covered.
 - Please only scrape sites you have the right to scrape, and respect their
   terms of service and copyright on any images you download.
+
+## Author
+
+**Pawan Yadav** — AI Engineer
+📧 yaduvanshi2000pawan@gmail.com
